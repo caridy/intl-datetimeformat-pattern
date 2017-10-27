@@ -9,7 +9,7 @@ ECMA-402, the Javascript Internationalization Specification does not include a w
 
 ```js
 const options = {
-    eekday: 'short',
+    weekday: 'short',
     month: 'short',
     day: 'numeric',
     year: '2-digit'
