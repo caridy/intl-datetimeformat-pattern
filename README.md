@@ -57,3 +57,6 @@ License
 
 This software is free to use under the MIT license.
 See the [LICENSE file][] for license text and copyright information.
+
+[CONTRIBUTING]: https://github.com/caridy/intl-datetimeformat-pattern/blob/master/CONTRIBUTING.md
+[LICENSE file]: https://github.com/caridy/intl-datetimeformat-pattern/blob/master/LICENSE
