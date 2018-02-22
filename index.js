@@ -83,12 +83,27 @@ function analyzeSkeltonSegment($0, formatObj) {
 
         // --- Hour
         case 'h':
+            // 1, 12
+            formatObj.hourCycle = "h12";
+            formatObj.hour12 = true; // 12-hour-cycle time formats
+            formatObj.hour = $0.length === 2 ? '2-digit' : 'numeric';
+            break;
         case 'H':
+            // 0-23
+            formatObj.hourCycle = "h23";
+            formatObj.hour12 = false; // 23-hour-cycle time formats
             formatObj.hour = $0.length === 2 ? '2-digit' : 'numeric';
             break;
         case 'k':
+            // 1, 24
+            formatObj.hourCycle = "h24";
+            formatObj.hour12 = false; // 24-hour-cycle time formats
+            formatObj.hour = $0.length === 2 ? '2-digit' : 'numeric';
+            break;
         case 'K':
-            formatObj.hour12 = true; // 12-hour-cycle time formats (using h or K)
+            // 0, 11
+            formatObj.hourCycle = "h11";
+            formatObj.hour12 = true; // 11-hour-cycle time formats
             formatObj.hour = $0.length === 2 ? '2-digit' : 'numeric';
             break;
 
