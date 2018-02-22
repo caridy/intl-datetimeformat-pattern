@@ -1,6 +1,6 @@
 {
   "name": "intl-datetimeformat-pattern",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library to map CLDR Pattern/Skeleton to Intl.DateTimeFormat options",
   "keywords": [
     "intl",
@@ -39,7 +39,7 @@
   },
   "scripts": {
     "lint": "eslint index.js",
-    "test": "mocha --recursive test/**/*-test.js -- --icu-data-dir=./node_modules/full-icu",
+    "test": "mocha --recursive test/**/*-test.js -R tap -- --icu-data-dir=./node_modules/full-icu",
     "prepublish": "npm run lint && npm test"
   },
   "cldr-data-coverage": "full"
